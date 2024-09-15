@@ -1,0 +1,15 @@
+{
+  "name": "playwright_playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Aswani kumar",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5",
+    "playwright": "^1.47.1"
+  }
+}
