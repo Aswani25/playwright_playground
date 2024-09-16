@@ -9,9 +9,9 @@ test('login test', async() => {
     const password: Locator = await page.locator('#input-password');
     const loginButton:Locator = await page.locator('[value="Login"]')
     
-    emailId.fill('pwpg@gmail.com');
-    password.fill('test@123');
-    loginButton.click();
+    await emailId.fill('pwpg@gmail.com');
+    await password.fill('test@123');
+    await loginButton.click();
 
     const title = await page.title()
     console.log("homepage title: ", title)
