@@ -4,7 +4,7 @@ import { webkit, chromium, firefox } from '@playwright/test'
 test('login test', async() => {
     const browser: Browser = await chromium.launch({headless:false});
     const page: Page = await browser.newPage();
-    await  page.goto('http://naveenautomationlabs.com/opencart/index.php?route=account/login');
+    await page.goto('http://naveenautomationlabs.com/opencart/index.php?route=account/login');
     const emailId: Locator = await page.locator('#input-email');
     const password: Locator = await page.locator('#input-password');
     const loginButton:Locator = await page.locator('[value="Login"]')
