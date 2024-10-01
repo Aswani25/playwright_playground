@@ -10,6 +10,8 @@ test('move to the element', async() => {
     await page.getByText('TaxiVisa Services').first().click();
 
     await page.waitForTimeout(15000);
+
+    browser.close();
 })
 
 test('move to the element using mousehover', async() => {
@@ -30,4 +32,5 @@ test('move to the element using mousehover', async() => {
     await expect(pageHeader).toContainText('Leaf & Dust Tea');
 
     await page.waitForTimeout(15000);
+    browser.close();
 })
